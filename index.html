@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,50 +9,113 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Iniciar sesión</title>
 </head>
-<body style="background: #f1f1f1;">
 
-    <div class="container rounded w-75 bg-white mt-5">
+<body style="background: #f1f1f1;" class="d-flex justify-content-center align-otems-center">
+
+    <div class="container rounded w-75 bg-white mt-5 position-relative overflow-hidden shadow">
         <div class="row">
-            <!-- <div class="col-md-6 p-0 d-flex justify-content-center align-items-center"> -->
-            <div class="col-md-6 p-0 d-flex">
-                <img src="img/fondo.jpeg" class="w-100 rounded-start position-relative" alt="">
-                <!-- <button class="btn btn-danger text-white p-3 w-50 fw-bold rounded-pill">Registrarme</button> -->
+            <div class="col-md-6 p-0 div-sign-up d-flex justify-content-center align-items-center" id="divSignUp">
+                <!-- <div class="col-md-6 p-0 d-flex"> -->
+                <!-- <img src="img/fondo.jpeg" class="w-100 rounded-start position-relative" alt=""> -->
+                <button class="btn btn-outline-danger btn-login text-white p-3 w-50 fw-bold rounded-pill"
+                    id="btnSignUp">Registrarme</button>
+                <div class="px-3 pb-5 pt-2 w-100 d-none" id="formSignUp"">
+                    <h1 class=" fw-bold text-center py-5">Registrarme</h1>
+                    <!-- LOGIN -->
+                    <form action="">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" name="name" placeholder=" ">
+                            <label for="name" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="number" class="form-control" name="documento" placeholder=" ">
+                            <label for="documento" class="form-label">N° documento <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control" name="email" placeholder=" ">
+                            <label for="email" class="form-label">Correo electrónico <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" name="password" placeholder=" ">
+                            <label for="password" class="form-label">Contraseña <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <!-- <div class="mb-4 form-check">
+                            <input type="checkbox" name="connected" class="form-check-input">
+                            <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                        </div> -->
+
+                        <div class="text-center">
+                            <button type="submit"
+                                class="btn btn-danger btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill">Crear
+                                cuenta</button>
+                        </div>
+
+                    </form>
+                </div>
             </div>
-            <div class="col-md-6 px-3 pb-5">
+            <div class="col-md-6 px-3 pb-5 pt-2" id="divSignIn">
                 <div class="text-end">
                     <svg class="bi" width="32" height="32" fill="currentColor">
                         <use xlink:href="../icons/bootstrap-icons.svg#box-arrow-in-right" />
                     </svg>
                 </div>
-                <h1 class="fw-bold text-center py-5">Iniciar sesión</h1>
-                <!-- LOGIN -->
-                <form action="">
-                    <div class="mb-4">
-                        <label for="email" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label">Contraseña <span class="text-danger">*</span></label>
-                        <input type="password" class="form-control" name="password">
-                    </div>
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
-                    </div>
+                <div class="d-block" id="id="formSignIn">
+                    <h1 class="fw-bold text-center py-5">Iniciar sesión</h1>
+                    <!-- LOGIN -->
+                    <form action="">
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control" name="email" placeholder=" ">
+                            <label for="email" class="form-label">Correo electrónico <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" name="password" placeholder=" ">
+                            <label for="password" class="form-label">Contraseña <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" name="connected" class="form-check-input">
+                            <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                        </div>
 
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary text-white fw-bold p-3 w-50 fw-bold rounded-pill">Iniciar sesión</button>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill">Iniciar sesión</button>
+                        </div>
+                    </form>
+                    <div class="my-3">
+                        <span><a href="" class="">Recuperar contraseña</a></span>
                     </div>
-
-                </form>
-                <div class="my-3 pb-5">
-                    <span><a href="" class="">Recuperar contraseña</a></span>
+                    <button type="submit" class="d-none btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill" id="btnSignIn">Iniciar sesión</button>
+                    <!-- <button class="btn btn-outline-danger btn-login text-white p-3 w-50 fw-bold rounded-pill"
+                    id="btnSignUp">Registrarme</button> -->
                 </div>
             </div>
         </div>
     </div>
 
-
     <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script>
+        let btnSignUp = document.getElementById('btnSignUp'),
+            formSignUp = document.getElementById('formSignUp'),
+            divSignUp = document.getElementById('divSignUp'),
+            btnSignIn = document.getElementById('btnSignIn'),
+            formSignIn = document.getElementById('formSignIn'),
+            divSignIn = document.getElementById('divSignIn');
+
+        btnSignUp.addEventListener('click', () => {
+            btnSignIn.classList.remove('d-none');
+            formSignUp.classList.remove('d-none');
+            btnSignUp.classList.add('d-none');
+            divSignUp.classList.remove('div-sign-up');
+            // formSignIn.classList.remove('d-none');
+            formSignIn.style.display = 'none';
+            divSignIn.classList.add('div-sing-up');
+        })
+    </script>
 </body>
+
 </html>

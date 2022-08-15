@@ -1,8 +1,20 @@
+div{
+    transition: all .3s ease-in-out;
+}
+
 .rounded-pill{
     border-radius: 3.125rem !important;
 }
 
-.form-control{
-    /* font-size: 3.125rem; */
-    height: 50px !important;
+.div-sign-up{
+    /* background-image: url(../img/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    min-height: 400px;
+    background: no-repeat center/cover url("../img/fondo.jpeg");
+}
+
+.btn-login:active{
+    transform: scale(0.90);
 }
