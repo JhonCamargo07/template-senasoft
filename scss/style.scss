@@ -21,6 +21,9 @@
     @include movil(48rem){min-height: 25rem}
 }
 
+.btn-login{
+    min-width: 12.5rem;
+}
 .btn-login:active{
     transform: scale(0.90);
 }

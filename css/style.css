@@ -19,6 +19,10 @@
   }
 }
 
+.btn-login {
+  min-width: 12.5rem;
+}
+
 .btn-login:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
