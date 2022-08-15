@@ -12,17 +12,60 @@
 
 <body style="background: #f1f1f1;" class="d-flex justify-content-center align-otems-center">
 
-    <div class="container rounded w-75 bg-white mt-5 position-relative overflow-hidden shadow">
+    <div class="container rounded w-75 bg-white mt-5 position-relative overflow-hidden shadow mb-3">
         <div class="row">
             <div class="col-md-6 p-0 div-sign-up d-flex justify-content-center align-items-center" id="divSignUp">
                 <!-- <div class="col-md-6 p-0 d-flex"> -->
                 <!-- <img src="img/fondo.jpeg" class="w-100 rounded-start position-relative" alt=""> -->
+                <button type="submit" class="d-none btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill" id="btnSignIn">Iniciar sesión</button>
+
                 <button class="btn btn-outline-danger btn-login text-white p-3 w-50 fw-bold rounded-pill"
                     id="btnSignUp">Registrarme</button>
-                <div class="px-3 pb-5 pt-2 w-100 d-none" id="formSignUp"">
-                    <h1 class=" fw-bold text-center py-5">Registrarme</h1>
+            </div>
+            <div class="col-md-6 px-3 py-3 pb-md-4" id="divSignIn">
+                <div class="my-1 w-100 py-3" id="formSignIn">
+                    <div class="text-end">
+                        <svg class="bi" width="32" height="32" fill="currentColor">
+                            <use xlink:href="libs/icons/bootstrap-icons.svg#box-arrow-in-right" />
+                        </svg>
+                    </div>
+                    <h1 class="fw-bold text-center pt-2 mb-4">Iniciar sesión</h1>
                     <!-- LOGIN -->
-                    <form action="">
+                    <form action="" method="POST">
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control" name="email" placeholder=" ">
+                            <label for="email" class="form-label">Correo electrónico <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" name="password" placeholder=" ">
+                            <label for="password" class="form-label">Contraseña <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" name="connected" class="form-check-input">
+                            <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                        </div>
+
+                        <div class="text-center mt-2">
+                            <button type="submit" class="btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill">Iniciar sesión</button>
+                        </div>
+                    </form>
+                    <div class="my-3">
+                        <span><a href="" class="">Recuperar contraseña</a></span>
+                    </div>
+                    <!-- <button class="btn btn-outline-danger btn-login text-white p-3 w-50 fw-bold rounded-pill"
+                    id="btnSignUp">Registrarme</button> -->
+                </div>
+                <div class="my-1 w-100 d-none py-3" id="formSignUp"">
+                    <div class="text-end">
+                        <svg class="bi" width="32" height="32" fill="currentColor">
+                            <use xlink:href="libs/icons/bootstrap-icons.svg#person-plus" />
+                        </svg>
+                    </div>
+                    <h1 class=" fw-bold text-center pt-2 mb-4">Registrarme</h1>
+                    <!-- LOGIN -->
+                    <form action="" method="POST">
                         <div class="form-floating mb-4">
                             <input type="text" class="form-control" name="name" placeholder=" ">
                             <label for="name" class="form-label">Nombre <span class="text-danger">*</span></label>
@@ -56,43 +99,6 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-6 px-3 pb-5 pt-2" id="divSignIn">
-                <div class="text-end">
-                    <svg class="bi" width="32" height="32" fill="currentColor">
-                        <use xlink:href="../icons/bootstrap-icons.svg#box-arrow-in-right" />
-                    </svg>
-                </div>
-                <div class="d-block" id="id="formSignIn">
-                    <h1 class="fw-bold text-center py-5">Iniciar sesión</h1>
-                    <!-- LOGIN -->
-                    <form action="">
-                        <div class="form-floating mb-4">
-                            <input type="email" class="form-control" name="email" placeholder=" ">
-                            <label for="email" class="form-label">Correo electrónico <span
-                                    class="text-danger">*</span></label>
-                        </div>
-                        <div class="form-floating mb-4">
-                            <input type="password" class="form-control" name="password" placeholder=" ">
-                            <label for="password" class="form-label">Contraseña <span
-                                    class="text-danger">*</span></label>
-                        </div>
-                        <div class="mb-4 form-check">
-                            <input type="checkbox" name="connected" class="form-check-input">
-                            <label for="connected" class="form-check-label">Mantenerme conectado</label>
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill">Iniciar sesión</button>
-                        </div>
-                    </form>
-                    <div class="my-3">
-                        <span><a href="" class="">Recuperar contraseña</a></span>
-                    </div>
-                    <button type="submit" class="d-none btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill" id="btnSignIn">Iniciar sesión</button>
-                    <!-- <button class="btn btn-outline-danger btn-login text-white p-3 w-50 fw-bold rounded-pill"
-                    id="btnSignUp">Registrarme</button> -->
-                </div>
-            </div>
         </div>
     </div>
 
@@ -110,11 +116,16 @@
             btnSignIn.classList.remove('d-none');
             formSignUp.classList.remove('d-none');
             btnSignUp.classList.add('d-none');
-            divSignUp.classList.remove('div-sign-up');
-            // formSignIn.classList.remove('d-none');
-            formSignIn.style.display = 'none';
-            divSignIn.classList.add('div-sing-up');
-        })
+            formSignIn.classList.add('d-none');
+        });
+
+        btnSignIn.addEventListener('click', () => {
+            btnSignIn.classList.add('d-none');
+            formSignUp.classList.add('d-none');
+            btnSignUp.classList.remove('d-none');
+            formSignIn.classList.remove('d-none');
+        });
+
     </script>
 </body>
 

@@ -1,0 +1,26 @@
+@mixin movil ($width : 30rem) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+.container{
+    @include movil(){
+        width: 95% !important;
+        margin-top: 1.25rem !important;
+    }
+}
+
+.rounded-pill{
+    border-radius: 3.125rem !important;
+}
+
+.div-sign-up{
+    min-height: 36.25rem;
+    background: no-repeat center/cover url("../img/fondo.jpeg");
+    @include movil(48rem){min-height: 25rem}
+}
+
+.btn-login:active{
+    transform: scale(0.90);
+}

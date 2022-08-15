@@ -1,20 +1,25 @@
-div{
-    transition: all .3s ease-in-out;
+@media screen and (max-width: 30rem) {
+  .container {
+    width: 95% !important;
+    margin-top: 1.25rem !important;
+  }
 }
 
-.rounded-pill{
-    border-radius: 3.125rem !important;
+.rounded-pill {
+  border-radius: 3.125rem !important;
 }
 
-.div-sign-up{
-    /* background-image: url(../img/fondo.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-    min-height: 400px;
-    background: no-repeat center/cover url("../img/fondo.jpeg");
+.div-sign-up {
+  min-height: 36.25rem;
+  background: no-repeat center/cover url("../img/fondo.jpeg");
+}
+@media screen and (max-width: 48rem) {
+  .div-sign-up {
+    min-height: 25rem;
+  }
 }
 
-.btn-login:active{
-    transform: scale(0.90);
-}
+.btn-login:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}/*# sourceMappingURL=style.css.map */
