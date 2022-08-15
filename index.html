@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Iniciar sesión</title>
+</head>
+<body style="background: #f1f1f1;">
+
+    <div class="container rounded w-75 bg-white mt-5">
+        <div class="row">
+            <!-- <div class="col-md-6 p-0 d-flex justify-content-center align-items-center"> -->
+            <div class="col-md-6 p-0 d-flex">
+                <img src="img/fondo.jpeg" class="w-100 rounded-start position-relative" alt="">
+                <!-- <button class="btn btn-danger text-white p-3 w-50 fw-bold rounded-pill">Registrarme</button> -->
+            </div>
+            <div class="col-md-6 px-3 pb-5">
+                <div class="text-end">
+                    <svg class="bi" width="32" height="32" fill="currentColor">
+                        <use xlink:href="../icons/bootstrap-icons.svg#box-arrow-in-right" />
+                    </svg>
+                </div>
+                <h1 class="fw-bold text-center py-5">Iniciar sesión</h1>
+                <!-- LOGIN -->
+                <form action="">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña <span class="text-danger">*</span></label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary text-white fw-bold p-3 w-50 fw-bold rounded-pill">Iniciar sesión</button>
+                    </div>
+
+                </form>
+                <div class="my-3 pb-5">
+                    <span><a href="" class="">Recuperar contraseña</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
