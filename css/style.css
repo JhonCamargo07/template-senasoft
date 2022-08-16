@@ -21,9 +21,31 @@
 
 .btn-login {
   min-width: 12.5rem;
+  -webkit-box-shadow: 5px 5px 14px -4px #000000; 
+box-shadow: 5px 5px 14px -4px #000000;
 }
 
 .btn-login:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }/*# sourceMappingURL=style.css.map */
+
+.btn-form {
+  border: 30px #ffc319 !important;
+  -webkit-box-shadow: 5px 5px 14px -4px #000000;
+  box-shadow: 5px 5px 14px -4px #000000;
+}
+
+.btn-form:hover {
+  background-color: transparent !important;
+}
+
+.text-size{
+
+  font-size: 20px;
+}
+
+.text-size-r{
+  font-size: 15px;
+
+}
