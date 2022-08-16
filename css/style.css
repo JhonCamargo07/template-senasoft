@@ -73,3 +73,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+thead{
+  background-color: rgb(223, 223, 223);
+}
+
+.table:hover{
+  background-color: rgb(243, 243, 243);
+}
