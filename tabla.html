@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tablas</title>
+</head>
+<body style="background: #f1f1f1;">
+
+    <div class="row  pe-5 p-5">
+        <button class="col-2 btn btn-primary text-light fw-bold my-2 fw-bold rounded-pill">Añadir Cliente</button>
+        <table class="table table-hover ">
+            <thead class="text-center text-black ">
+                <tr>
+                    <th>#</th>
+                    <th>Cedula</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td>1</td>
+                    <td>10010111</td>
+                    <td>Maria</td>
+                    <td>312331332</td>
+                    <td>
+                        <button class="btn btn-orange text-light fw-bold my-2 fw-bold rounded-pill">Editar</button>
+                        <button class="btn btn-danger text-light fw-bold my-2 fw-bold rounded-pill">Eliminar</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>10010111</td>
+                    <td>Maria</td>
+                    <td>312331332</td>
+                    <td>
+                        <button class="btn btn-orange text-light fw-bold my-2 fw-bold rounded-pill">Editar</button>
+                        <button class="btn btn-danger text-light fw-bold my-2 fw-bold rounded-pill">Eliminar</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>10010111</td>
+                    <td>Maria</td>
+                    <td>312331332</td>
+                    <td>
+                        <button class="btn btn-orange text-light fw-bold my-2 fw-bold rounded-pill">Editar</button>
+                        <button class="btn btn-danger text-light fw-bold my-2 fw-bold rounded-pill">Eliminar</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>10010111</td>
+                    <td>Maria</td>
+                    <td>312331332</td>
+                    <td>
+                        <button class="btn btn-orange text-light fw-bold my-2 fw-bold rounded-pill">Editar</button>
+                        <button class="btn btn-danger text-light fw-bold my-2 fw-bold rounded-pill">Eliminar</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>10010111</td>
+                    <td>Maria</td>
+                    <td>312331332</td>
+                    <td>
+                        <button class="btn btn-orange text-light fw-bold my-2 fw-bold rounded-pill">Editar</button>
+                        <button class="btn btn-danger text-light fw-bold my-2 fw-bold rounded-pill">Eliminar</button>
+                    </td>
+                </tr>
+                </tbody>
+          </table>
+    </div>
+    <script src="libs/bootstrap/dist/js/popper.min.js"></script>
+    <script src="libs/bootstrap/dist/js/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        let btnSignUp = document.getElementById('btnSignUp'),
+            formSignUp = document.getElementById('formSignUp'),
+            divSignUp = document.getElementById('divSignUp'),
+            btnSignIn = document.getElementById('btnSignIn'),
+            formSignIn = document.getElementById('formSignIn'),
+            divSignIn = document.getElementById('divSignIn');
+
+        btnSignUp.addEventListener('click', () => {
+            btnSignIn.classList.remove('d-none');
+            formSignUp.classList.remove('d-none');
+            btnSignUp.classList.add('d-none');
+            formSignIn.classList.add('d-none');
+        });
+
+        btnSignIn.addEventListener('click', () => {
+            btnSignIn.classList.add('d-none');
+            formSignUp.classList.add('d-none');
+            btnSignUp.classList.remove('d-none');
+            formSignIn.classList.remove('d-none');
+        });
+
+    </script>
+</body>
+</html>
