@@ -13,10 +13,21 @@
   min-height: 36.25rem;
   background: no-repeat center/cover url("../img/fondo.jpeg");
 }
+
 @media screen and (max-width: 48rem) {
   .div-sign-up {
     min-height: 25rem;
   }
+}
+
+.btn-form {
+  border: 30px #ffc319 !important;
+  -webkit-box-shadow: 5px 5px 14px -4px #000000;
+  box-shadow: 5px 5px 14px -4px #000000;
+}
+
+.btn-form:hover {
+  background-color: transparent !important;
 }
 
 .btn-login {
@@ -28,7 +39,7 @@ box-shadow: 5px 5px 14px -4px #000000;
 .btn-login:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-}/*# sourceMappingURL=style.css.map */
+}
 
 .btn-form {
   border: 30px #ffc319 !important;
@@ -47,5 +58,10 @@ box-shadow: 5px 5px 14px -4px #000000;
 
 .text-size-r{
   font-size: 15px;
+  transform: scale(0.9);
+}
 
+.col-cards{
+  display: flex;
+  flex-wrap: wrap;
 }
