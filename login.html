@@ -10,23 +10,27 @@
     <title>Iniciar sesión</title>
 </head>
 
-<body style="background: #f1f1f1;" class="d-flex justify-content-center align-otems-center">
+<body style="background: #f1f1f1;" class="d-flex justify-content-center align-items-center">
 
-    <div class="container rounded w-75 bg-white mt-5 position-relative overflow-hidden shadow mb-3">
+    <div class="container rounded w-75 mt-4 bg-white overflow-hidden shadow mb-3">
         <div class="row">
             <div class="col-md-6 p-0 div-sign-up d-flex justify-content-center align-items-center" id="divSignUp">
                 <!-- <div class="col-md-6 p-0 d-flex"> -->
                 <!-- <img src="img/fondo.jpeg" class="w-100 rounded-start position-relative" alt=""> -->
-                <button type="submit" class="d-none btn btn-cyan btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
-                    id="btnSignIn">Iniciar sesión</button>
+                <button type="submit"
+                    class="d-none btn btn-cyan btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
+                    id="btnSignIn">Iniciar sesión
+                </button>
 
-                <button class="btn btn-warning btn-login text-white p-3 w-50 fw-bold rounded-pill shadow font btn-form text-size" id="btnSignUp">Registrarme</button>
+                <button
+                    class="btn btn-warning btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
+                    id="btnSignUp">Registrarme</button>
             </div>
             <div class="col-md-6 px-3 py-3 pb-md-4" id="divSignIn">
                 <div class="my-1 w-100 py-3" id="formSignIn">
                     <div class="text-end">
                         <svg class="bi text-primary" width="32" height="32" fill="currentColor">
-                            <use xlink:href="libs/icons/bootstrap-icons.svg#person-plus" />
+                            <use xlink:href="libs/icons/bootstrap-icons.svg#box-arrow-in-right" />
                         </svg>
                     </div>
                     <h1 class="fw-bold text-center pt-2 mb-4">Iniciar sesión</h1>
@@ -48,50 +52,55 @@
                         </div>
 
                         <div class="text-center mt-2">
-                            <button type="submit" class="btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill text-size" id="btnIniciarSesion">Iniciar sesión</button>
+                            <button type="submit"
+                                class="btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill text-size"
+                                id="btnIniciarSesion">Iniciar sesión</button>
                         </div>
                     </form>
                     <!-- /LOGIN -->
                     <div class="my-3 text-center text-size-r">
-                        <span><a href="" class="" >Recuperar contraseña</a></span>
+                        <span><a href="" class="">Recuperar contraseña</a></span>
                     </div>
 
                 </div>
                 <div class="my-1 w-100 d-none py-3" id="formSignUp">
                     <div class=" text-end">
-                    <svg class="bi text-rojo-oscuro" width="32" height="32" fill="currentColor">
-                        <use xlink:href="libs/icons/bootstrap-icons.svg#person-plus" />
-                    </svg>
+                        <svg class="bi text-rojo-oscuro" width="32" height="32" fill="currentColor">
+                            <use xlink:href="libs/icons/bootstrap-icons.svg#person-plus" />
+                        </svg>
+                    </div>
+                    <h1 class=" fw-bold text-center pt-2 mb-4">Registrarme</h1>
+                    <!-- SIGNUP -->
+                    <form action="" method="POST">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" name="name" placeholder=" ">
+                            <label for="name" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="number" class="form-control" name="documento" placeholder=" ">
+                            <label for="documento" class="form-label">N° documento <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control" name="email" placeholder=" ">
+                            <label for="email" class="form-label">Correo electrónico <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" name="password" placeholder=" ">
+                            <label for="password" class="form-label">Contraseña <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="btn btn-warning btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill text-size"
+                                id="btnRegistrar">Crear cuenta</button>
+                        </div>
+                    </form>
+                    <!-- /SIGNUP -->
                 </div>
-                <h1 class=" fw-bold text-center pt-2 mb-4">Registrarme</h1>
-                <!-- SIGNUP -->
-                <form action="" method="POST">
-                    <div class="form-floating mb-4">
-                        <input type="text" class="form-control" name="name" placeholder=" ">
-                        <label for="name" class="form-label">Nombre <span class="text-danger">*</span></label>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="number" class="form-control" name="documento" placeholder=" ">
-                        <label for="documento" class="form-label">N° documento <span
-                                class="text-danger">*</span></label>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="email" class="form-control" name="email" placeholder=" ">
-                        <label for="email" class="form-label">Correo electrónico <span
-                                class="text-danger">*</span></label>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="password" class="form-control" name="password" placeholder=" ">
-                        <label for="password" class="form-label">Contraseña <span class="text-danger">*</span></label>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-warning btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill text-size" id="btnRegistrar">Crear cuenta</button>
-                    </div>
-                </form>
-                <!-- /SIGNUP -->
             </div>
         </div>
-    </div>
     </div>
 
     <script src="js/alerta.js"></script>
@@ -130,7 +139,11 @@
 
         let btnRegistrar = document.getElementById('btnRegistrar');
         btnRegistrar.addEventListener('click', (e) => {
-            toast;
+            e.preventDefault();
+            Toast.fire({
+                icon: 'success',
+                title: 'Registro exitoso'
+            })
         });
 
         const Toast = Swal.mixin({
@@ -143,11 +156,6 @@
                 toast.addEventListener('mouseenter', Swal.stopTimer)
                 toast.addEventListener('mouseleave', Swal.resumeTimer)
             }
-        })
-
-        Toast.fire({
-            icon: 'success',
-            title: 'Registro exitoso'
         })
 
     </script>

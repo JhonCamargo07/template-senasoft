@@ -10,7 +10,7 @@
 }
 
 .div-sign-up {
-  min-height: 36.25rem;
+  min-height: 36.5rem;
   background: no-repeat center/cover url("../img/fondo.jpeg");
 }
 
@@ -18,6 +18,10 @@
   .div-sign-up {
     min-height: 25rem;
   }
+}
+
+.btn{
+  transition: all .3s ease-in-out;
 }
 
 .btn-form {
@@ -32,8 +36,8 @@
 
 .btn-login {
   min-width: 12.5rem;
-  -webkit-box-shadow: 5px 5px 14px -4px #000000; 
-box-shadow: 5px 5px 14px -4px #000000;
+  -webkit-box-shadow: 5px 5px 50px 4px #000000; 
+  box-shadow: 5px 5px 14px -4px #000000;
 }
 
 .btn-login:active {
@@ -52,8 +56,12 @@ box-shadow: 5px 5px 14px -4px #000000;
 }
 
 .text-size{
-
   font-size: 20px;
+}
+
+.shadow{
+  -webkit-box-shadow: 5px 5px 14px -4px #000000; 
+  box-shadow: 5px 5px 14px -4px #000000;
 }
 
 .text-size-r{
