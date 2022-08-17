@@ -3,4 +3,4 @@
 ![Index](img/index.png)
 ![Index](img/login.png)
 ![Index](img/signup.png)
-![Index](img/Data Table.jpg)
+![Index](img/DataTable.jpg)
