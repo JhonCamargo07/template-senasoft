@@ -1,69 +1,31 @@
-.text-size-18 {
-    font-size: 1.125rem;
+/*!==============================================================*/
+            /*!================= Estilos para textos =================*/
+/*!==============================================================*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,italic,700);
+
+.text-roboto{
+    font-family: 'Roboto', sans-serif !important;
 }
 
-.btn {
-    transition: all .3s ease-in-out;
+.text-montserrat{
+    font-family: 'Montserrat', sans-serif !important;
 }
 
-.btn-form {
-    border: 30px #ffc319 !important;
-    -webkit-box-shadow: 5px 5px 14px -4px #000000;
-    box-shadow: 5px 5px 14px -4px #000000;
+.text-raleway{
+    font-family: 'Raleway', sans-serif !important;
 }
 
-.btn-form:hover {
-    background-color: transparent !important;
+.text-fire-code{
+    font-family: 'Fira Code', monospace !important;
 }
 
-.btn-login {
-    min-width: 12.5rem;
-    -webkit-box-shadow: 5px 5px 50px 4px #000000;
-    box-shadow: 5px 5px 14px -4px #000000;
+.text-baskerville{
+    font-family: 'Libre Baskerville', serif;
 }
-
-.btn-login:active {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-}
-
-.btn-form {
-    border: 30px #ffc319 !important;
-    -webkit-box-shadow: 5px 5px 14px -4px #000000;
-    box-shadow: 5px 5px 14px -4px #000000;
-}
-
-.btn-form:hover {
-    background-color: transparent !important;
-}
-
-.text-size {
-    font-size: 20px;
-}
-
-.shadow {
-    -webkit-box-shadow: 5px 5px 14px -4px #000000;
-    box-shadow: 5px 5px 14px -4px #000000;
-}
-
-.text-size-r {
-    font-size: 15px;
-    transform: scale(0.9);
-}
-
-.wrap {
-    flex-wrap: wrap;
-}
-
-thead {
-    background-color: rgb(223, 223, 223);
-}
-
-.table:hover {
-    background-color: rgb(243, 243, 243);
-}
-
-/* fuentes para titulos*/
 
 @font-face {
     font-family: Titulos;
@@ -107,9 +69,6 @@ thead {
     src: url(../fuentes/hasta_grotesk/hasta\ grotesk.ttf);
 }
 
-h1{
-    font-family: Titulos3;
-}
 .titulo1{
     font-family: Titulos1;
 }
@@ -129,14 +88,31 @@ h1{
     font-family: parrafo1;
 }
 
-
-
-
-
+.text-size-r {
+    font-size: 0.9375rem; /* 15px */
+    transform: scale(0.9);
+}
 
 .text-size-18 {
-    font-size: 1.125rem;
+    font-size: 1.125rem; /* 18px */
 }
+
+.text-size {
+    font-size: 1.25rem; /* 20px */
+}
+
+.shadow {
+    -webkit-box-shadow: 5px 5px 14px -4px #000000;
+    box-shadow: 5px 5px 14px -4px #000000;
+}
+/*!==============================================================*/
+            /*!================= /Estilos para textos =================*/
+/*!==============================================================*/
+
+
+/*!==============================================================*/
+            /*!================= Estilos para botones =================*/
+/*!==============================================================*/
 
 .btn {
     transition: all .3s ease-in-out;
@@ -169,27 +145,13 @@ h1{
     box-shadow: 5px 5px 14px -4px #000000;
 }
 
-.btn-form:hover {
-    background-color: transparent !important;
-}
+/*!==============================================================*/
+            /*!================= /Estilos para botones =================*/
+/*!==============================================================*/
 
-.text-size {
-    font-size: 20px;
-}
-
-.shadow {
-    -webkit-box-shadow: 5px 5px 14px -4px #000000;
-    box-shadow: 5px 5px 14px -4px #000000;
-}
-
-.text-size-r {
-    font-size: 15px;
-    transform: scale(0.9);
-}
-
-.wrap {
-    flex-wrap: wrap;
-}
+/*!==============================================================*/
+            /*!================= /Estilos para tablas =================*/
+/*!==============================================================*/
 
 thead {
     background-color: rgb(223, 223, 223);
@@ -199,4 +161,10 @@ thead {
     background-color: rgb(243, 243, 243);
 }
 
-/* @import "sass.css"; */
+/*!==============================================================*/
+            /*!================= Otros estilos=================*/
+/*!==============================================================*/
+
+.wrap {
+    flex-wrap: wrap;
+}
