@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sass.css">
     <title>Iniciar sesión</title>
 </head>
 
@@ -22,8 +23,7 @@
                     id="btnSignIn">Iniciar sesión
                 </button>
 
-                <button
-                    class="btn btn-warning btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
+                <button class="btn btn-warning btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
                     id="btnSignUp">Registrarme</button>
             </div>
             <div class="col-md-6 px-3 py-3 pb-md-4" id="divSignIn">
@@ -35,16 +35,21 @@
                     </div>
                     <h1 class="fw-bold text-center pt-2 mb-4">Iniciar sesión</h1>
                     <!-- LOGIN -->
-                    <form action="" method="POST">
+                    <form action="" method="POST" class="needs-validation" novalidate>
                         <div class="form-floating mb-4">
-                            <input type="email" class="form-control" name="email" placeholder=" ">
+                            <input type="email" class="form-control" name="email" placeholder=" " minlength="10" required>
                             <label for="email" class="form-label">Correo electrónico <span
                                     class="text-danger">*</span></label>
+                            <span class="invalid-feedback">El correo solo puede contener letras, números, puntos,
+                                guiones, guion bajo, debe ser un correo válido y no puede estar vacío</span>
+                            <span class="valid-feedback">Correo valido</span>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="password" class="form-control" name="password" placeholder=" ">
+                            <input type="password" class="form-control" name="password" placeholder=" " minlength="10" maxlength="30" required>
                             <label for="password" class="form-label">Contraseña <span
                                     class="text-danger">*</span></label>
+                            <span class="invalid-feedback">La contraseña debe ser de 10 a 30 caracteres</span>
+                            <span class="valid-feedback">Contraseña valida</span>
                         </div>
                         <div class="mb-4 form-check">
                             <input type="checkbox" name="connected" class="form-check-input">
@@ -71,25 +76,36 @@
                     </div>
                     <h1 class=" fw-bold text-center pt-2 mb-4">Registrarme</h1>
                     <!-- SIGNUP -->
-                    <form action="" method="POST">
+                    <form action="" method="POST" class="needs-validation" novalidate>
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control" name="name" placeholder=" ">
+                            <input type="text" class="form-control" name="name" placeholder=" " minlength="10" maxlength="60" required>
                             <label for="name" class="form-label">Nombre <span class="text-danger">*</span></label>
+                            <span class="invalid-feedback">El nombre debe ser de 7 a 60 caracteres, solo puede contener
+                                letras y no puede estar vacío</span>
+                            <span class="valid-feedback">Nombre valido</span>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="number" class="form-control" name="documento" placeholder=" ">
+                            <input type="number" class="form-control" name="documento" placeholder=" " min="99999" required>
                             <label for="documento" class="form-label">N° documento <span
                                     class="text-danger">*</span></label>
+                            <span class="invalid-feedback">Debe proporcionar su numero de documento (sin puntos ni
+                                comas)</span>
+                            <span class="valid-feedback">Documento valido</span>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="email" class="form-control" name="email" placeholder=" ">
+                            <input type="email" class="form-control" name="email" placeholder=" " minlength="10" required>
                             <label for="email" class="form-label">Correo electrónico <span
                                     class="text-danger">*</span></label>
+                            <span class="invalid-feedback">El correo solo puede contener letras, números, puntos,
+                                guiones, guion bajo, debe ser un correo válido y no puede estar vacío</span>
+                            <span class="valid-feedback">Correo valido</span>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="password" class="form-control" name="password" placeholder=" ">
+                            <input type="password" class="form-control" name="password" placeholder=" " minlength="10" maxlength="30" required>
                             <label for="password" class="form-label">Contraseña <span
                                     class="text-danger">*</span></label>
+                            <span class="invalid-feedback">La contraseña debe ser de 10 a 30 caracteres</span>
+                            <span class="valid-feedback">Contraseña valida</span>
                         </div>
                         <div class="text-center">
                             <button type="submit"
@@ -103,6 +119,7 @@
         </div>
     </div>
 
+    <script src="js/validar-formulario.js"></script>
     <script src="js/alerta.js"></script>
     <script src="libs/bootstrap/dist/js/sweetalert.js"></script>
     <script src="libs/bootstrap/dist/js/popper.min.js"></script>
@@ -130,33 +147,6 @@
             btnSignUp.classList.remove('d-none');
             formSignIn.classList.remove('d-none');
         });
-
-        let btnIniciarSesion = document.getElementById('btnIniciarSesion');
-        btnIniciarSesion.addEventListener('click', (e) => {
-            e.preventDefault();
-            alertaFlotante('Error en los datos', 'Ningún campo puede ser nulo, compruebe que todos estén correctamente diligenciados e intente nuevamente', '#f27474', 'error');
-        });
-
-        let btnRegistrar = document.getElementById('btnRegistrar');
-        btnRegistrar.addEventListener('click', (e) => {
-            e.preventDefault();
-            Toast.fire({
-                icon: 'success',
-                title: 'Registro exitoso'
-            })
-        });
-
-        const Toast = Swal.mixin({
-            toast: true,
-            position: 'top-end',
-            showConfirmButton: false,
-            timer: 5000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-        })
 
     </script>
 </body>

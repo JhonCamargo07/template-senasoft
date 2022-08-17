@@ -1,0 +1,49 @@
+@media screen and (max-width: 30rem) {
+  .container {
+    width: 95% !important;
+    margin-top: 1.25rem !important;
+  }
+}
+
+.rounded-pill {
+  border-radius: 3.125rem !important;
+}
+
+@media screen and (max-width: 75rem) {
+  .card-info {
+    min-height: 36.6875rem;
+  }
+}
+@media screen and (max-width: 62.5rem) {
+  .card-info {
+    min-height: auto;
+  }
+}
+
+.div-sign-up {
+  min-height: 36.25rem;
+  background: no-repeat center/cover url("../img/fondo.jpeg");
+}
+@media screen and (max-width: 48rem) {
+  .div-sign-up {
+    min-height: 25rem;
+  }
+}
+
+.btn-login {
+  min-width: 12.5rem;
+}
+
+.btn-login:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.btn-crud {
+  width: 48%;
+}
+@media screen and (max-width: 48rem) {
+  .btn-crud {
+    width: 100%;
+  }
+}/*# sourceMappingURL=sass.css.map */

@@ -15,6 +15,11 @@
     border-radius: 3.125rem !important;
 }
 
+.card-info{
+    @include movil(75rem){min-height: 36.6875rem;}
+    @include movil(62.5rem){min-height: auto;}
+}
+
 .div-sign-up{
     min-height: 36.25rem;
     background: no-repeat center/cover url("../img/fondo.jpeg");
@@ -26,4 +31,9 @@
 }
 .btn-login:active{
     transform: scale(0.90);
+}
+
+.btn-crud{
+    width: 48%;
+    @include movil(48rem){width: 100%;}
 }

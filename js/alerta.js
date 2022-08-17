@@ -1,4 +1,4 @@
-var alertaFlotante = (titulo, texto, colorBoton, imagen) => {
+let alertaFlotante = (titulo, texto, colorBoton, imagen) => {
     swal.fire({
         title: `${titulo}`,
         text: `${texto}`,
@@ -11,22 +11,42 @@ var alertaFlotante = (titulo, texto, colorBoton, imagen) => {
         timer: 5090,
         timerProgressBar: true,
         didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
         },
         showClass: {
             popup: 'animate__animated animate__fadeInDown'
-            },
-            hideClass: {
+        },
+        hideClass: {
             popup: 'animate__animated animate__fadeOutUp'
-            },
+        },
         allowOutsideClick: false,
         allowEscapeKey: false,
         allowEnterKey: false,
         stopKeydownPropagation: false,
     });
 }
-var alertaFlotanteConRedirecion = (titulo, texto, colorBoton, imagen, direccion) => {
+let alertaConFormulario = (titulo, texto, textBtn, colorBoton, imagen) => {
+    swal.fire({
+        title: `${titulo}`,
+        text: `${texto}`,
+        confirmButtonText: `${textBtn}`,
+        confirmButtonColor: `${colorBoton}`,
+        showCancelButton: true,
+        cancelButtonText: 'Cancelar',
+        // imageUrl: `${imagen}`,
+        // imageWidth: "auto",
+        // imageHeight: 135,
+        icon: `${imagen}`,
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+        },
+    });
+}
+let alertaFlotanteConRedirecion = (titulo, texto, colorBoton, imagen, direccion) => {
     swal.fire({
         title: `${titulo}`,
         text: `${texto}`,
@@ -38,26 +58,42 @@ var alertaFlotanteConRedirecion = (titulo, texto, colorBoton, imagen, direccion)
         timer: 5090,
         timerProgressBar: true,
         didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
         },
         showClass: {
             popup: 'animate__animated animate__fadeInDown'
-            },
-            hideClass: {
+        },
+        hideClass: {
             popup: 'animate__animated animate__fadeOutUp'
-            },
+        },
         allowOutsideClick: false,
         allowEscapeKey: false,
         allowEnterKey: false,
         stopKeydownPropagation: false,
-    }).then((result)=>{
-        if(result.isConfirmed){
+    }).then((result) => {
+        if (result.isConfirmed) {
             location.href = `${direccion}`;
         }
     });
     // Redirecionar
-    setInterval( ()=> {
+    setInterval(() => {
         location.href = `${direccion}`;
     }, 5100);
+}
+
+let alertaDiminuta = (icon, title) => {
+    swal.fire({
+        icon: `${icon}`,
+        title: `${title}`,
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
 }
