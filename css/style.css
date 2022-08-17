@@ -108,12 +108,25 @@ thead {
 }
 
 h1{
-
+    font-family: Titulos3;
+}
+.titulo1{
+    font-family: Titulos1;
+}
+.titulo2{
+    font-family: Titulos2;
+}
+.titulo3{
     font-family: Titulos3;
 }
 .parrafo{
     font-family: parrafo3;
-
+}
+.parrafo2{
+    font-family: parrafo2;
+}
+.parrafo1{
+    font-family: parrafo1;
 }
 
 
