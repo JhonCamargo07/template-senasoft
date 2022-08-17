@@ -1,6 +1,130 @@
-.text-size-18{
+.text-size-18 {
     font-size: 1.125rem;
 }
+
+.btn {
+    transition: all .3s ease-in-out;
+}
+
+.btn-form {
+    border: 30px #ffc319 !important;
+    -webkit-box-shadow: 5px 5px 14px -4px #000000;
+    box-shadow: 5px 5px 14px -4px #000000;
+}
+
+.btn-form:hover {
+    background-color: transparent !important;
+}
+
+.btn-login {
+    min-width: 12.5rem;
+    -webkit-box-shadow: 5px 5px 50px 4px #000000;
+    box-shadow: 5px 5px 14px -4px #000000;
+}
+
+.btn-login:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.btn-form {
+    border: 30px #ffc319 !important;
+    -webkit-box-shadow: 5px 5px 14px -4px #000000;
+    box-shadow: 5px 5px 14px -4px #000000;
+}
+
+.btn-form:hover {
+    background-color: transparent !important;
+}
+
+.text-size {
+    font-size: 20px;
+}
+
+.shadow {
+    -webkit-box-shadow: 5px 5px 14px -4px #000000;
+    box-shadow: 5px 5px 14px -4px #000000;
+}
+
+.text-size-r {
+    font-size: 15px;
+    transform: scale(0.9);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+thead {
+    background-color: rgb(223, 223, 223);
+}
+
+.table:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+/* fuentes para titulos*/
+
+@font-face {
+    font-family: Titulos;
+    src: url(../fuentes/gobold/Gobold\ Bold.otf);
+}
+
+
+@font-face {
+    font-family: Titulos1;
+    src: url(../fuentes/soria/Soria-Bold.otf);
+}
+
+@font-face {
+    font-family: Titulos2;
+    src: url(../fuentes/chicago_police/Chicago\ Police\ Font.otf);
+}
+
+@font-face {
+    font-family: Titulos3;
+    src: url(../fuentes/cremona/Cremona\ Regular\ OTF.otf);
+}
+
+/* Fuentes para parrafos */
+@font-face {
+    font-family: parrafo;
+    src: url(../fuentes/timeburner/timeburnernormal.ttf);
+}
+
+@font-face {
+    font-family: parrafo1;
+    src: url(../fuentes/kiye_sans/Kiye-Sans.ttf);
+}
+
+@font-face {
+    font-family: parrafo2;
+    src: url(../fuentes/coamei/COAMEI_L.ttf);
+}
+
+@font-face {
+    font-family: parrafo3;
+    src: url(../fuentes/hasta_grotesk/hasta\ grotesk.ttf);
+}
+
+h1{
+
+    font-family: Titulos3;
+}
+.parrafo{
+    font-family: parrafo3;
+
+}
+
+
+
+
+
+
+.text-size-18 {
+    font-size: 1.125rem;
+}
+
 .btn {
     transition: all .3s ease-in-out;
 }
