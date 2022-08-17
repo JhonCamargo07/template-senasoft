@@ -7,164 +7,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sass.css">
     <title>Datos de clientes</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-cards mt-3 d-flex justify-content-center">
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/woman.png" class="card-img-top" alt="Jane Doe">
+        <div class="row g-3 mb-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/man.png" height="250px" class="" alt="Jaime Alfonso Guzman"
+                            title="Jaime Alfonso Guzman">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">Jane Doe</h4>
-                        <p class="card-text">1.014.431.158</p>
-                        <p class="card-text">janedoe@mail.com</p>
-                        <p class="card-text">Avenida 45 #12-96</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Jaime Alfonso Guzman</span>
+                            (activo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            1.0143.198.478</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
+                            1520</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
+                            #15-41</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            jaimealfonso@mail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-inactivar">Inactivar</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/man.png" class="card-img-top" alt="Jane Doe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/woman.png" height="250px" class="" alt="Martha Lucia Camacho"
+                            title="Martha Lucia Camacho">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">John Doe</h4>
-                        <p class="card-text">1.541.548.364</p>
-                        <p class="card-text">johndoe@mail.com</p>
-                        <p class="card-text">Diagonal 92 C BIS #15-4</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Martha Lucia Camacho</span>
+                            (activo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            1.145.954.732</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
+                            1520</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Calle 90
+                            sur #11-22</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            marthacamacho@hotmail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-inactivar">Inactivar</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/woman.png" class="card-img-top" alt="Jane Doe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/persona1.png" height="250px" class="" alt="Juan Fernando Martinez"
+                            title="Juan Fernando Martinez">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">Jane Doe</h4>
-                        <p class="card-text">1.014.431.158</p>
-                        <p class="card-text">janedoe@mail.com</p>
-                        <p class="card-text">Avenida 45 #12-96</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Juan Fernando Martinez</span>
+                            (Inactivo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            784.213.241</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 320 842
+                            3295</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
+                            #15-41</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            juanmartinez@gmail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-activar">Activar</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/man.png" class="card-img-top" alt="Jane Doe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/persona4.png" height="250px" class="" alt="Martha Lucia Camacho"
+                            title="Laura Camila Avellaneda">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">John Doe</h4>
-                        <p class="card-text">1.541.548.364</p>
-                        <p class="card-text">johndoe@mail.com</p>
-                        <p class="card-text">Diagonal 92 C BIS #15-4</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Laura Camila Avellaneda</span>
+                            (inactivo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            1.145.954.732</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
+                            1520</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Calle 90
+                            sur #11-22</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            marthacamacho@hotmail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-activar">Activar</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/woman.png" class="card-img-top" alt="Jane Doe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/persona6.png" height="250px" class="" alt="Andrés Geronimo Aguilar"
+                            title="Andrés Geronimo Aguilar">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">Jane Doe</h4>
-                        <p class="card-text">1.014.431.158</p>
-                        <p class="card-text">janedoe@mail.com</p>
-                        <p class="card-text">Avenida 45 #12-96</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Andrés Geronimo Aguilar</span>
+                            (activo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            1.0143.198.478</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
+                            1520</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
+                            #15-41</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            jaimealfonso@mail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-inactivar">Inactivar</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/man.png" class="card-img-top" alt="Jane Doe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/persona5.png" height="250px" class="" alt="Paula Valentina Petro"
+                            title="Paula Valentina Petro">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">John Doe</h4>
-                        <p class="card-text">1.541.548.364</p>
-                        <p class="card-text">johndoe@mail.com</p>
-                        <p class="card-text">Diagonal 92 C BIS #15-4</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Paula Valentina Petro</span>
+                            (activo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            784.213.241</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 320 842
+                            3295</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
+                            #15-41</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            juanmartinez@gmail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-inactivar">Inactivar</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/woman.png" class="card-img-top" alt="Jane Doe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/persona3.png" height="250px" class="" alt="Juan Fernando Martinez"
+                            title="Juan Fernando Martinez">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">Jane Doe</h4>
-                        <p class="card-text">1.014.431.158</p>
-                        <p class="card-text">janedoe@mail.com</p>
-                        <p class="card-text">Avenida 45 #12-96</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Jhonatan Harley Martinez</span>
+                            (Inactivo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            784.213.241</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 320 842
+                            3295</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
+                            #15-41</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            juanmartinez@gmail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-activar">Activar</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/man.png" class="card-img-top" alt="Jane Doe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/persona8.png" height="250px" class="" alt="Maria Fernanda Castañeda Alvarez"
+                            title="Maria Fernanda Castañeda Alvarez">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">John Doe</h4>
-                        <p class="card-text">1.541.548.364</p>
-                        <p class="card-text">johndoe@mail.com</p>
-                        <p class="card-text">Diagonal 92 C BIS #15-4</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Maria Fernanda Castañeda
+                                Alvarez</span> (activo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            1.145.954.732</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
+                            1520</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Calle 90
+                            sur #11-22</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            mariacastaneda@hotmail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-inactivar">Inactivar</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/woman.png" class="card-img-top" alt="Jane Doe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-info">
+                    <div class="text-center pt-2">
+                        <img src="./img/persona7.png" height="250px" class="" alt="Juan Gabriel Cepeda"
+                            title="Juan Gabriel Cepeda">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">Jane Doe</h4>
-                        <p class="card-text">1.014.431.158</p>
-                        <p class="card-text">janedoe@mail.com</p>
-                        <p class="card-text">Avenida 45 #12-96</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/man.png" class="card-img-top" alt="Jane Doe">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">John Doe</h4>
-                        <p class="card-text">1.541.548.364</p>
-                        <p class="card-text">johndoe@mail.com</p>
-                        <p class="card-text">Diagonal 92 C BIS #15-4</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card m-3" style="width: 14.7rem;">
-                    <div class="p-3">
-                        <img src="img/man.png" class="card-img-top" alt="Jane Doe">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title text-center fw-bold mb-3">John Doe</h4>
-                        <p class="card-text">1.541.548.364</p>
-                        <p class="card-text">johndoe@mail.com</p>
-                        <p class="card-text">Diagonal 92 C BIS #15-4</p>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary w-100 px-4 py-2 text-white">Editar</a>
+                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Juan Gabriel Cepeda</span>
+                            (activo)</h5>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
+                            1.0143.198.478</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
+                            1520</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 30
+                            #17-41</p>
+                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
+                            juancepeda@mail.com</p>
+                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
+                            <div class="text-center btn-crud me-1 mt-3"><a href="#"
+                                    class="btn btn-primary text-white fw-lg-bold w-100 text-size-18 btn-edit">Editar</a></div>
+                            <div class="text-center btn-crud ms-1 mt-3"><a href="#"
+                                    class="btn btn-secondary text-white fw-bold w-100 text-size-18 btn-inactivar">Inactivar</a></div>
                         </div>
                     </div>
                 </div>
@@ -172,10 +251,40 @@
         </div>
     </div>
 
+    <script src="js/alerta.js"></script>
     <script src="libs/bootstrap/dist/js/sweetalert.js"></script>
     <script src="libs/bootstrap/dist/js/popper.min.js"></script>
     <script src="libs/bootstrap/dist/js/jquery.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        const btnInactivar = document.querySelectorAll('.btn-inactivar');
+        Array.from(btnInactivar).forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.innerHTML = 'Activar';
+                alertaDiminuta('success', 'Usuario inactivado');
+            });
+        });
+
+        const btnActivar = document.querySelectorAll('.btn-activar');
+        Array.from(btnActivar).forEach(btn => {
+            btn.addEventListener('click', () => {
+                if(btn.innerHTML == 'Activar'){
+                    btn.innerHTML = 'Inactivar';
+                }else{
+                    btn.innerHTML = 'Activar';
+                }
+                alertaDiminuta('success', 'Usuario activado');
+            });
+        });
+
+        const btnEdit = document.querySelectorAll('.btn-edit');
+        Array.from(btnEdit).forEach(btn => {
+            btn.addEventListener('click', () => {
+                alertaConFormulario('Nombre...', 'Datos...Datos...', 'Editar datos', '#12a5c7', '');
+            });
+        });
+    </script>
 </body>
 
 </html>
