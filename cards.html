@@ -296,8 +296,8 @@
     <script>
         const btnEdit = document.querySelectorAll('.btn-edit');
         Array.from(btnEdit).forEach(btn => {
-            btn.addEventListener('click', () => {
-                alertaConFormulario('Nombre...', 'Datos...Datos...', 'Editar datos', '#12a5c7', '');
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
             });
         });
     </script>

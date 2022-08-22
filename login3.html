@@ -7,27 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/login.css"> -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/sass.css">
+    <!-- <link rel="stylesheet" href="css/sass.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Iniciar sesión</title>
 </head>
 
-<body style="background: #f1f1f1;" class="position-relative">
-    <!-- <div class="position absolute mx-5 mt-5 mb-2">
-        <svg class="bi text-rojo-oscuro" width="32" height="32" fill="currentColor">
-            <use xlink:href="libs/icons/bootstrap-icons.svg#person-plus" />
-        </svg>
-    </div> -->
-
-    <div class="d-flex justify-content-center text-montserrat ">
-        <div class="container rounded w-75 mt-4 bg-white position-absolute shadow mb-3" id="main">
-            <div class="sign-up">
-                
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><svg class="bi text-dark me-1" width="50" height="50" fill="currentColor">
+                <use xlink:href="libs/icons/bootstrap-icons.svg#bank" />
+            </svg>Banco digital SW<span class="text-primary">.</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg class="bi text-dark me-1" width="50" height="50" fill="currentColor">
+                    <use xlink:href="libs/icons/bootstrap-icons.svg#list" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-primary text-white text-size-18 px-3 fw-bold" href="index.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container rounded bg-white">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6">
                 <form action="" method="POST" class="needs-validation px-5" novalidate>
-                    <h1 class="fw-bold text-center pt-4 mb-4">Registrarme</h1>
+                    <h1 class="fw-bold text-center pt-4 mb-4">Iniciar sesion</h1>
                     <div class="form-floating mb-4">
-                        <input type="text" class="form-control w-100" name="name" placeholder=" " minlength="10" maxlength="60"
-                            required>
+                        <input type="email" class="form-control" name="email" placeholder=" " minlength="10" required>
+                        <label for="email" class="form-label">Correo electrónico <span
+                                class="text-danger">*</span></label>
+                        <span class="invalid-feedback">El correo solo puede contener letras, números, puntos,
+                            guiones, guion bajo, debe ser un correo válido y no puede estar vacío</span>
+                        <span class="valid-feedback">Correo valido</span>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="password" class="form-control" name="password" placeholder=" " minlength="10"
+                            maxlength="30" required>
+                        <label for="password" class="form-label">Contraseña <span class="text-danger">*</span></label>
+                        <span class="invalid-feedback">La contraseña debe ser de 10 a 30 caracteres</span>
+                        <span class="valid-feedback">Contraseña valida</span>
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+
+                    <div class="text-center mt-2">
+                        <button type="submit"
+                            class="btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill text-size"
+                            id="btnIniciarSesion">Iniciar sesión</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+                <form action="" method="POST" class="needs-validation px-5" novalidate>
+                    <h1 class="fw-bold text-center pt-4 mb-4 mt-mg-5">Registrarme</h1>
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control w-100" name="name" placeholder=" " minlength="10"
+                            maxlength="60" required>
                         <label for="name" class="form-label">Nombre <span class="text-danger">*</span></label>
                         <span class="invalid-feedback">El nombre debe ser de 7 a 60 caracteres, solo puede contener
                             letras y no puede estar vacío</span>
@@ -35,14 +79,16 @@
                     </div>
                     <div class="form-floating mb-4">
                         <input type="number" class="form-control" name="documento" placeholder=" " min="99999" required>
-                        <label for="documento" class="form-label">N° documento <span class="text-danger">*</span></label>
+                        <label for="documento" class="form-label">N° documento <span
+                                class="text-danger">*</span></label>
                         <span class="invalid-feedback">Debe proporcionar su numero de documento (sin puntos ni
                             comas)</span>
                         <span class="valid-feedback">Documento valido</span>
                     </div>
                     <div class="form-floating mb-4">
                         <input type="email" class="form-control" name="email" placeholder=" " minlength="10" required>
-                        <label for="email" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                        <label for="email" class="form-label">Correo electrónico <span
+                                class="text-danger">*</span></label>
                         <span class="invalid-feedback">El correo solo puede contener letras, números, puntos,
                             guiones, guion bajo, debe ser un correo válido y no puede estar vacío</span>
                         <span class="valid-feedback">Correo valido</span>
@@ -61,52 +107,9 @@
                     </div>
                 </form>
             </div>
-            <div class="sign-in">
-                <form action="" method="POST" class="needs-validation px-5" novalidate>
-                    <h1 class="fw-bold text-center pt-4 mb-4">Iniciar sesion</h1>
-                    <div class="form-floating mb-4">
-                        <input type="email" class="form-control" name="email" placeholder=" " minlength="10" required>
-                        <label for="email" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
-                        <span class="invalid-feedback">El correo solo puede contener letras, números, puntos,
-                            guiones, guion bajo, debe ser un correo válido y no puede estar vacío</span>
-                        <span class="valid-feedback">Correo valido</span>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="password" class="form-control" name="password" placeholder=" " minlength="10"
-                            maxlength="30" required>
-                        <label for="password" class="form-label">Contraseña <span class="text-danger">*</span></label>
-                        <span class="invalid-feedback">La contraseña debe ser de 10 a 30 caracteres</span>
-                        <span class="valid-feedback">Contraseña valida</span>
-                    </div>
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
-                    </div>
-        
-                    <div class="text-center mt-2">
-                        <button type="submit"
-                            class="btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill text-size"
-                            id="btnIniciarSesion">Iniciar sesión</button>
-                    </div>
-                </form>
-            </div>
-            <div class="overlay-container">
-                <div class="overlay div-sign-up">
-                    <div class="overlay-left">
-                        <button type="submit"
-                            class="btn btn-cyan btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
-                            id="btnSignIn">Iniciar sesión
-                        </button>
-                    </div>
-                    <div class="overlay-right">
-                        <button
-                            class="btn btn-warning btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
-                            id="btnSignUp">Registrarme</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+
 
     <script src="js/validar-formulario.js"></script>
     <script src="js/alerta.js"></script>
