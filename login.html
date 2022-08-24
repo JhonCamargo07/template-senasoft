@@ -14,8 +14,8 @@
 <body style="background: #f1f1f1">
 
     <a href="index.html">
-    <div class="position-absolute bg-white rounded-circle p-3 mx-3 mt-3">
-            <svg class="bi text-rojo-oscuro" width="32" height="32" fill="currentColor">
+        <div class="position-absolute bg-white rounded-circle py-1 px-2 mx-3 mt-2">
+            <svg class="bi text-rojo-oscuro" width="1rem" height="1rem" fill="currentColor">
                 <use xlink:href="libs/icons/bootstrap-icons.svg#arrow-90deg-left" />
             </svg>
         </div>
@@ -28,110 +28,157 @@
                     <!-- <div class="col-md-6 p-0 d-flex"> -->
                     <!-- <img src="img/fondo.jpeg" class="w-100 rounded-start position-relative" alt=""> -->
                     <button type="submit"
-                        class="d-none btn btn-primary btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
+                        class="d-none btn btn-primary text-white px-5 py-3 rounded-2 fw-bold border-0 text-size"
                         id="btnSignIn">
                         Iniciar sesión
                     </button>
 
-                    <button
-                        class="btn btn-warning btn-login text-white p-3 w-50 fw-bold rounded-pill btn-form text-size"
+                    <button class="btn btn-orange text-white px-5 py-3 rounded-2 fw-bold border-0 text-size"
                         id="btnSignUp">
                         Registrarme
                     </button>
                 </div>
-                <div class="col-md-6 px-3 py-3 pb-md-4" id="divSignIn">
-                    <div class="my-1 w-100 py-3" id="formSignIn">
-                        <div class="text-end">
+                <div class="col-md-6 px-5 pb-md-5 d-flex justify-content-center align-items-center"
+                    id="divSignIn">
+                    <div class="my-1 w-100 mb-3" id="formSignIn">
+                        <!-- <div class="text-end">
                             <svg class="bi text-primary" width="32" height="32" fill="currentColor">
                                 <use xlink:href="libs/icons/bootstrap-icons.svg#box-arrow-in-right" />
                             </svg>
-                        </div>
-                        <h1 class="fw-bold text-center pt-2 mb-4">Iniciar sesión</h1>
+                        </div> -->
+                        <h2 class="fw-bold text-center pt-2 mb-4">Ingrese con su cuenta</h2>
                         <!-- LOGIN -->
                         <form action="" method="POST" class="needs-validation" novalidate>
-                            <div class="form-floating mb-4">
-                                <input type="email" class="form-control" name="email" placeholder=" " minlength="10"
-                                    required />
+                            <div class="mb-3">
                                 <label for="email" class="form-label">Correo electrónico
                                     <span class="text-danger">*</span></label>
-                                <span class="invalid-feedback">El correo solo puede contener letras, números, puntos,
+                                <input type="email" class="form-control" name="email" id="email" placeholder="janedoe@mail.com" minlength="10"
+                                    required />
+                                <span class="invalid-feedback text-size-r">El correo solo puede contener letras,
+                                    números, puntos,
                                     guiones, guion bajo, debe ser un correo válido y no puede
                                     estar vacío</span>
                                 <span class="valid-feedback">Correo valido</span>
                             </div>
-                            <div class="form-floating mb-4">
-                                <input type="password" class="form-control" name="password" placeholder=" "
-                                    minlength="10" maxlength="30" required />
+                            <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña <span
                                         class="text-danger">*</span></label>
-                                <span class="invalid-feedback">La contraseña debe ser de 10 a 30 caracteres</span>
+                                <input type="password" class="form-control" name="password" id="password" placeholder=""
+                                    minlength="10" maxlength="30" required />
+                                <span class="invalid-feedback text-size-r">La contraseña debe ser de 10 a 30
+                                    caracteres</span>
                                 <span class="valid-feedback">Contraseña valida</span>
                             </div>
                             <div class="mb-4 form-check">
                                 <input type="checkbox" name="connected" class="form-check-input" />
-                                <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                                <label for="connected" class="form-check-label text-size-r">Mantenerme conectado</label>
                             </div>
 
-                            <div class="text-center mt-2">
+                            <div class="text-center">
                                 <button type="submit"
-                                    class="btn btn-primary btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill text-size"
+                                    class="btn btn-primary text-white w-100 fw-bold text-size-18 px-3 fw-bold"
                                     id="btnIniciarSesion">
                                     Iniciar sesión
                                 </button>
                             </div>
                         </form>
                         <!-- /LOGIN -->
-                        <div class="my-3 text-center text-size-r">
+                        <div class="text-center text-size-r">
                             <span><a href="" class="">Recuperar contraseña</a></span>
                         </div>
                     </div>
                     <div class="my-1 w-100 d-none py-3" id="formSignUp">
-                        <div class="text-end">
+                        <!-- <div class="text-end">
                             <svg class="bi text-rojo-oscuro" width="32" height="32" fill="currentColor">
                                 <use xlink:href="libs/icons/bootstrap-icons.svg#person-plus" />
                             </svg>
-                        </div>
-                        <h1 class="fw-bold text-center pt-2 mb-4">Registrarme</h1>
+                        </div> -->
+                        <h2 class="fw-bold text-center pt-2 mb-4">Registrate gratis</h2>
                         <!-- SIGNUP -->
                         <form action="" method="POST" class="needs-validation" novalidate>
-                            <div class="form-floating mb-4">
-                                <input type="text" class="form-control" name="name" placeholder=" " minlength="10"
-                                    maxlength="60" required />
-                                <label for="name" class="form-label">Nombre <span class="text-danger">*</span></label>
-                                <span class="invalid-feedback">El nombre debe ser de 7 a 60 caracteres, solo puede
-                                    contener letras y no puede estar vacío</span>
-                                <span class="valid-feedback">Nombre valido</span>
+                            <div class="row ">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="">
+                                        <label for="name" class="form-label">Nombre <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Jane"
+                                            minlength="10" maxlength="30" required />
+                                        <span class="invalid-feedback">Solo se aceptan letras, max: 30</span>
+                                        <span class="valid-feedback">Nombre valido</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="">
+                                        <label for="apellido" class="form-label">Apellido <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Doe"
+                                            minlength="10" maxlength="30" required />
+                                        <span class="invalid-feedback">Solo se aceptan letras, max: 30</span>
+                                        <span class="valid-feedback">Apellido valido</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-floating mb-4">
-                                <input type="number" class="form-control" name="documento" placeholder=" " min="99999"
-                                    required />
-                                <label for="documento" class="form-label">N° documento <span
-                                        class="text-danger">*</span></label>
-                                <span class="invalid-feedback">Debe proporcionar su numero de documento (sin puntos ni
-                                    comas)</span>
-                                <span class="valid-feedback">Documento valido</span>
+                            <div class="row ">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="tipoDoc" class="form-label">Tipo de documento <span class="text-danger">*</span></label>
+                                    <select class="form-select" name="tipoDoc" id="tipoDoc">
+                                        <option value="1">Cédula de ciudadanía</option>
+                                        <option value="2">Tarjeta de identidad</option>
+                                        <option value="3">Cédula de extranjería</option>
+                                        <option value="4">Pasaporte</option>
+                                    </select>
+                                    <span class="invalid-feedback">Debe proporcionar su numero de documento (sin puntos
+                                        ni
+                                        comas)</span>
+                                    <span class="valid-feedback">Documento valido</span>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="documento" class="form-label">N° documento <span
+                                            class="text-danger">*</span></label>
+                                    <input type="number" class="form-control" name="documento" id="documento" placeholder="1014124135"
+                                        min="99999" required />
+                                    <span class="invalid-feedback">Debe proporcionar su numero de documento (sin puntos
+                                        ni
+                                        comas)</span>
+                                    <span class="valid-feedback">Documento valido</span>
+                                </div>
                             </div>
-                            <div class="form-floating mb-4">
-                                <input type="email" class="form-control" name="email" placeholder=" " minlength="10"
-                                    required />
+                            <div class="mb-3">
                                 <label for="email" class="form-label">Correo electrónico
                                     <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="janedoe@mail.com" minlength="10"
+                                    required />
                                 <span class="invalid-feedback">El correo solo puede contener letras, números, puntos,
                                     guiones, guion bajo, debe ser un correo válido y no puede
                                     estar vacío</span>
                                 <span class="valid-feedback">Correo valido</span>
                             </div>
-                            <div class="form-floating mb-4">
-                                <input type="password" class="form-control" name="password" placeholder=" "
-                                    minlength="10" maxlength="30" required />
-                                <label for="password" class="form-label">Contraseña <span
-                                        class="text-danger">*</span></label>
-                                <span class="invalid-feedback">La contraseña debe ser de 10 a 30 caracteres</span>
-                                <span class="valid-feedback">Contraseña valida</span>
+                            <div class="row ">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Contraseña <span
+                                                class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" name="password" id="password" placeholder=" "
+                                            minlength="10" maxlength="30" required />
+                                        <span class="invalid-feedback">La contraseña debe ser de 10 a 30 caracteres</span>
+                                        <span class="valid-feedback">Contraseña valida</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="passwordConfirm" class="form-label">Confirmar contraseña <span
+                                                class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" name="password" id="passwordConfirm" placeholder=" "
+                                            minlength="10" maxlength="30" required />
+                                        <span class="invalid-feedback">La contraseña debe ser de 10 a 30 caracteres</span>
+                                        <span class="valid-feedback">Contraseña valida</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-center">
+                            
+                            <div class="text-center mb-col-5">
                                 <button type="submit"
-                                    class="btn btn-warning btn-login text-white fw-bold p-3 w-50 fw-bold rounded-pill text-size"
+                                    class="btn btn-orange  text-white w-100 fw-bold text-size-18 px-3 fw-bold "
                                     id="btnRegistrar">
                                     Crear cuenta
                                 </button>

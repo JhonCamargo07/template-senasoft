@@ -90,7 +90,7 @@
 
 .text-size-r {
     font-size: 0.9375rem; /* 15px */
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
 }
 
 .text-size-18 {
