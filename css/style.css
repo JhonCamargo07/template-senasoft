@@ -185,3 +185,8 @@ thead {
     margin-top: -120px;
     right: -6.25rem !important;
 }
+
+.verticalLine { 
+    border-left: thick solid #ff0000; 
+}
+
