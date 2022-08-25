@@ -15,9 +15,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 mb-2">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"><svg class="bi text-dark me-1" width="50" height="50" fill="currentColor">
-                <use xlink:href="libs/icons/bootstrap-icons.svg#bank" />
-            </svg>Banco digital SW<span class="text-primary">.</span></a>
+            <a class="navbar-brand fw-bold" href="index.html"><svg class="bi text-dark me-1" width="50" height="50"
+                    fill="currentColor">
+                    <use xlink:href="libs/icons/bootstrap-icons.svg#bank" />
+                </svg>Banco digital SW<span class="text-primary">.</span></a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,19 +29,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item d-flex">
-                        <a class="nav-link text-dark align-self-center active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link text-dark align-self-center active" aria-current="page"
+                            href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item d-flex">
-                        <a class="nav-link text-dark align-self-center active" aria-current="page" href="cards.html">Cards</a>
+                        <a class="nav-link text-dark align-self-center active" aria-current="page"
+                            href="cards.html">Cards</a>
                     </li>
                     <li class="nav-item d-flex">
                         <a class="nav-link text-dark align-self-center" href="cards2.html">Cards 2</a>
                     </li>
                     <li class="nav-item me-2 mb-2">
-                        <a class="btn btn-warning text-white text-size-18 fw-bold shadow" href="card-compact.html">Cards pequeñas</a>
+                        <a class="btn btn-warning text-white text-size-18 fw-bold shadow" href="card-compact.html">Cards
+                            pequeñas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary text-white text-size-18 fw-bold shadow" href="card-compact2.html">Cards más pequeñas</a>
+                        <a class="btn btn-primary text-white text-size-18 fw-bold shadow"
+                            href="card-compact2.html">Cards más pequeñas</a>
                     </li>
                 </ul>
             </div>
@@ -48,274 +53,546 @@
     </nav>
 
     <div class="container">
-        <div class="row g-3 mb-3">
+        <div class="row g-3 my-3">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/man.png" height="250px" class="" alt="Jaime Alfonso Guzman"
-                            title="Jaime Alfonso Guzman">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample1">
+                        <div>
+                            <img src="./img/man.png" height="250px" class="position-relative" alt="Jaime Alfonso Guzman"
+                                title="Jaime Alfonso Guzman">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Jaime Alfonso
+                                    Guzman</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Jaime Alfonso Guzman</span>
-                            (activo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            1.0143.198.478</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
-                            1520</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
-                            #15-41</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            jaimealfonso@mail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample1">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">
+                        <div>
+                            <img src="./img/woman.png" height="250px" class="position-relative"
+                                alt="Martha Lucia Camacho" title="Martha Lucia Camacho">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Martha Lucia
+                                    Camacho</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample2">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/woman.png" height="250px" class="" alt="Martha Lucia Camacho"
-                            title="Martha Lucia Camacho">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExampl32">
+                        <div>
+                            <img src="./img/persona1.png" height="250px" class="position-relative"
+                                alt="Juan Fernando Martinez" title="Juan Fernando Martinez">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Juan Fernando
+                                    Martinez</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Martha Lucia Camacho</span>
-                            (activo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            1.145.954.732</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
-                            1520</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Calle 90
-                            sur #11-22</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            marthacamacho@hotmail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample3">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/persona1.png" height="250px" class="" alt="Juan Fernando Martinez"
-                            title="Juan Fernando Martinez">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample4">
+                        <div>
+                            <img src="./img/persona2.png" height="250px" class="position-relative"
+                                alt="Laura Camila Avellaneda" title="Laura Camila Avellaneda">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Laura Camila
+                                    Avellaneda</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Juan Fernando Martinez</span>
-                            (Inactivo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            784.213.241</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 320 842
-                            3295</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
-                            #15-41</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            juanmartinez@gmail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample4">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/persona4.png" height="250px" class="" alt="Martha Lucia Camacho"
-                            title="Laura Camila Avellaneda">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample5">
+                        <div>
+                            <img src="./img/persona3.png" height="250px" class="position-relative"
+                                alt="Andrés Geronimo Aguilar" title="Andrés Geronimo Aguilar">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Andrés Geronimo
+                                    Aguilar</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Laura Camila Avellaneda</span>
-                            (inactivo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            1.145.954.732</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
-                            1520</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Calle 90
-                            sur #11-22</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            marthacamacho@hotmail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample5">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/persona6.png" height="250px" class="" alt="Andrés Geronimo Aguilar"
-                            title="Andrés Geronimo Aguilar">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample6">
+                        <div>
+                            <img src="./img/persona4.png" height="250px" class="position-relative"
+                                alt="Paola Herrera Bermudez" title="Paola Herrera Bermudez">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Paola Herrera
+                                    Bermudez</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Andrés Geronimo Aguilar</span>
-                            (activo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            1.0143.198.478</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
-                            1520</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
-                            #15-41</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            jaimealfonso@mail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample6">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/persona5.png" height="250px" class="" alt="Paula Valentina Petro"
-                            title="Paula Valentina Petro">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample7">
+                        <div>
+                            <img src="./img/persona5.png" height="250px" class="position-relative"
+                                alt="Sandra Isabel Gutierrez" title="Sandra Isabel Gutierrez">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Sandra Isabel
+                                    Gutierrez</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Paula Valentina Petro</span>
-                            (activo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            784.213.241</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 320 842
-                            3295</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
-                            #15-41</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            juanmartinez@gmail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample7">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/persona3.png" height="250px" class="" alt="Juan Fernando Martinez"
-                            title="Juan Fernando Martinez">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample8" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample8">
+                        <div>
+                            <img src="./img/persona6.png" height="250px" class="position-relative"
+                                alt="Jhonatan Harley Martinez" title="Jhonatan Harley Martinez">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Jhonatan Harley
+                                    Martinez</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Jhonatan Harley Martinez</span>
-                            (Inactivo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            784.213.241</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 320 842
-                            3295</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 20
-                            #15-41</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            juanmartinez@gmail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample8">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/persona8.png" height="250px" class="" alt="Maria Fernanda Castañeda Alvarez"
-                            title="Maria Fernanda Castañeda Alvarez">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample9" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample9">
+                        <div>
+                            <img src="./img/persona7.png" height="250px" class="position-relative"
+                                alt="Juan Gabriel Cepeda" title="Juan Gabriel Cepeda">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Juan Gabriel
+                                    Cepeda</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Maria Fernanda Castañeda
-                                Alvarez</span> (activo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            1.145.954.732</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
-                            1520</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Calle 90
-                            sur #11-22</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            mariacastaneda@hotmail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample9">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample10" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample10">
+                        <div>
+                            <img src="./img/persona8.png" height="250px" class="position-relative"
+                                alt="Maria Fernanda Castañeda Alvarez" title="Maria Fernanda Castañeda Alvarez">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Maria Fernanda
+                                    Castañeda Alvarez</span>
+                            </h4>
+                        </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample10">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-info">
-                    <div class="text-center pt-2">
-                        <img src="./img/persona7.png" height="250px" class="" alt="Juan Gabriel Cepeda"
-                            title="Juan Gabriel Cepeda">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3"><span class="fw-bold">Juan Gabriel Cepeda</span>
-                            (activo)</h5>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Cédula de ciudadania:</span>
-                            1.0143.198.478</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Teléfono:</span> 314 478
-                            1520</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Dirección:</span> Carrera 30
-                            #17-41</p>
-                        <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder">Correo:</span>
-                            juancepeda@mail.com</p>
-                        <div class="d-flex wrap text-center justify-content-sm-around align-content-center">
-                            <div class="text-center btn-crud ms-1 mt-3">
-                                <button type="button"
-                                    class="btn btn-primary text-size-18 text-white fw-lg-bold w-100 btn-edit fw-bold d-flex justify-content-center align-items-center"><svg
-                                        class="bi text-white me-1" width="25" height="20" fill="currentColor">
-                                        <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-square" />
-                                    </svg>Editar
-                                </button>
-                            </div>
+                <div class="bg-light border-0 card card-info shadow">
+                    <div class="d-flex justify-content-evenly align-items-center text-center py-2"
+                        data-bs-toggle="collapse" href="#multiCollapseExample11" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample11">
+                        <div>
+                            <img src="./img/persona9.png" height="250px" class="position-relative"
+                                alt="Camila Isabel Sandoval" title="Camila Isabel Sandoval">
+                            <h4 class="card-title text-center mt-2"><span class="text-cyan fw-bold">Camila Isabel
+                                    Sandoval</span>
+                            </h4>
                         </div>
+                        <div class="position-absolute right-10" title="Ver más">
+                            <svg class="fw-bold bi text-success" width="50" height="30" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#plus-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse px-3 mb-3" id="multiCollapseExample11">
+                        <div>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front-fill" />
+                                    </svg>Cédula de ciudadania:</span>
+                                1.043.198.478</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#telephone-fill" />
+                                    </svg>Teléfono:</span> 314 478
+                                1520</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#geo-alt-fill" />
+                                    </svg>Dirección:</span> Carrera 20
+                                #15-41</p>
+                            <p class="card-text text-size-18 mb-1 mx-2"><span class="fw-bolder"><svg class="bi me-1"
+                                        width="18" height="25" fill="currentColor">
+                                        <use xlink:href="libs/icons/bootstrap-icons.svg#envelope-fill" />
+                                    </svg>Correo:</span>
+                                jaimealfonso@mail.com</p>
+                        </div>
+                        <div class="float-end right-10 top-10 btn-edit cursor-pointer" role="button" title="Ver más">
+                            <svg class="fw-bold bi text-orange" width="30" height="25" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#pencil-fill" />
+                            </svg>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -332,7 +609,7 @@
         const btnEdit = document.querySelectorAll('.btn-edit');
         Array.from(btnEdit).forEach(btn => {
             btn.addEventListener('click', (e) => {
-                e.preventDefault();
+                alertaConFormulario('Jaime Alfonso Guzmas', 'C.C: 1.043.198.478....', 'Editar', '#12a5c7', '');
             });
         });
     </script>

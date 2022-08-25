@@ -44,7 +44,11 @@ let alertaConFormulario = (titulo, texto, textBtn, colorBoton, imagen) => {
         hideClass: {
             popup: 'animate__animated animate__fadeOutUp'
         },
-    });
+    }).then((result) => {
+        if (result.isConfirmed) {
+            alertaDiminuta('success', 'Usuario actualizado correctamente');
+        }
+    })
 }
 let alertaFlotanteConRedirecion = (titulo, texto, colorBoton, imagen, direccion) => {
     swal.fire({
