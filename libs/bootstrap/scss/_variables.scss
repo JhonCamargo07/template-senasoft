@@ -49,6 +49,7 @@ $teal:    #00c487 !default; //
 $cyan:    #0dcaf0 !default; //
 $verde-crema:    #00c389 !default;
 $rojo-oscuro:  #ff2623 !default;
+$mora-azul:  #404ae0 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -65,6 +66,7 @@ $colors: (
   "cyan":       $cyan,
   "black":      $black,
   "white":      $white,
+  "mora-azul":      $mora-azul,
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ) !default;
@@ -316,6 +318,7 @@ $indigo:        $indigo !default;
 $purple:        $purple !default;
 $pink:          $pink !default;
 $verde-crema:  $verde-crema !default;
+$mora-azul:  $mora-azul !default;
 $rojo-oscuro:  $rojo-oscuro !default;
 // scss-docs-end theme-color-variables
 
@@ -337,6 +340,7 @@ $theme-colors: (
   "pink":       $pink,
   "verde-crema":  $verde-crema,
   "rojo-oscuro":  $rojo-oscuro,
+  "mora-azul":  $mora-azul,
 ) !default;
 // scss-docs-end theme-colors-map
 
