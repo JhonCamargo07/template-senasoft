@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/sass.css"> -->
@@ -13,12 +14,12 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 mb-2">
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"><svg class="bi text-dark me-1" width="50" height="50"
+            <a class="navbar-brand fw-bold ms-2" href="#"><svg class="bi text-dark me-1" width="50" height="50"
                     fill="currentColor">
                     <use xlink:href="libs/icons/bootstrap-icons.svg#bank" />
-                </svg>Banco digital SW<span class="text-primary">.</span></a>
+                </svg><span class="ms-2">Banco digital SW</span></a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -26,28 +27,70 @@
                     <use xlink:href="libs/icons/bootstrap-icons.svg#list" />
                 </svg>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item d-flex">
-                        <a class="nav-link text-dark align-self-center active" aria-current="page"
-                            href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link text-dark align-self-center active" aria-current="page"
-                            href="cards.html">Cards</a>
-                    </li>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link text-dark align-self-center" href="cards2.html">Cards 2</a>
-                    </li>
-                    <li class="nav-item me-2 mb-2">
-                        <a class="btn btn-warning text-white text-size-18 fw-bold shadow" href="card-compact.html">Cards
-                            pequeñas</a>
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link fw-bold d-flex align-items-center" href="index.html">
+                            <svg class="bi text-dark me-1" width="20" height="20" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#house-door" />
+                            </svg>
+                            Inicio
+                            <span class="sr-only"> </span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary text-white text-size-18 fw-bold shadow"
-                            href="card-compact2.html">Cards más pequeñas</a>
+                        <a class="nav-link fw-bold d-flex align-items-center" href="cards.html">
+                            <svg class="bi text-dark me-1" width="20" height="20" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#table" />
+                            </svg>
+                            Cards
+                        </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold d-flex align-items-center" href="cards2.html">
+                            <svg class="bi text-dark me-1" width="20" height="20" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#credit-card-2-front" />
+                            </svg>
+                            Cards2
+                        </a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a class="nav-link fw-bold d-flex align-items-center" href="card-compact.html">
+                            <svg class="bi text-dark me-1" width="20" height="20" fill="currentColor">
+                                <use xlink:href="libs/icons/bootstrap-icons.svg#bar-chart-line" />
+                            </svg>
+                            Cards pequeñas
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-bell">
+                  <span class="badge badge-info">11</span>
+                </i>
+                Card
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-globe">
+                  <span class="badge badge-success">11</span>
+                </i>
+                Test
+              </a>
+            </li> -->
                 </ul>
+                <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
+                <a href="card-compact2.html"><button class="btn btn-outline-orange my-2 my-sm-0 me-2" type="submit">
+                        <svg class="bi  me-2" width="20" height="20" fill="currentColor">
+                            <use xlink:href="libs/icons/bootstrap-icons.svg#download" />
+                        </svg>Cards más pequeñas</button></a>
+                <a href="login.html"><button class="btn btn-primary my-2 my-sm-0" type="submit">
+                    <svg class="bi  me-2" width="20" height="20" fill="currentColor">
+                        <use xlink:href="libs/icons/bootstrap-icons.svg#box-arrow-in-right" />
+                    </svg>Iniciar sesion</button></a>
             </div>
         </div>
     </nav>
