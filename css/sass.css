@@ -21,7 +21,7 @@
 }
 
 .div-sign-up {
-  min-height: 36.25rem;
+  min-height: 40.625rem;
   background: no-repeat center/cover url("../img/fondo.jpeg");
 }
 @media screen and (max-width: 48rem) {
@@ -55,7 +55,7 @@
 
 .container {
   max-width: 100%;
-  min-height: 650px;
+  min-height: 40.625rem;
   border-radius: 10px;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -141,8 +141,13 @@ button:active {
           transform: scale(0.9);
 }
 
+#btnSignIn:hover, #btnSignUp:hover {
+  -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+}
+
 #btnSignIn, #btnSignUp {
-  background-color: transparent;
+  /* background-color: transparent; */
   border: 0.125rem solid #fff;
 }
 
